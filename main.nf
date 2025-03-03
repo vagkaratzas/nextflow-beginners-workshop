@@ -1,20 +1,8 @@
-process GUNZIP {
-    input:
-    path archive
-
-    output:
-    path "${uncompressed_name}"
-
-    script:
-    uncompressed_name = archive.toString() - '.gz'
-    """
-    gunzip -c ${archive} > ${uncompressed_name}
-    """
-}
+include { GUNZIP } from './modules/local/gunzip/main' 
 
 workflow {
 
-    ch_archive = channel.fromPath( 'proteins_50K.fasta.gz', checkIfExists: true  )
+    ch_archive = channel.fromPath( params.input, checkIfExists: true  )
     ch_archive.view()
 
     GUNZIP( ch_archive )
