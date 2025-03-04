@@ -1,0 +1,20 @@
+{
+  "name": "nextflow-beginners-workshop",
+  "homePage": "https://github.com/vagkaratzas/nextflow-beginners-workshop",
+  "repos": {
+    "https://github.com/nf-core/modules.git": {
+      "modules": {
+        "nf-core": {
+          "gunzip": {
+            "branch": "master",
+            "git_sha": "81880787133db07d9b4c1febd152c090eb8325dc",
+            "installed_by": ["modules"]
+          }
+        }
+      },
+      "subworkflows": {
+        "nf-core": {}
+      }
+    }
+  }
+}
