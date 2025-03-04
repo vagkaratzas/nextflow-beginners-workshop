@@ -1,12 +1,9 @@
 # Nextflow workshop for beginners
 
-## `Lesson-3`
-At the moment we have an input file of 50K amino acid sequences. Splitting this into smaller chunks, can enable parallel processing, leading in lowered execution duration.
-This is common practice while building scalable pipelines that will run on huge volumes of data.
-
-To achieve this, we are using our first Nextflow operator.
-Specifically, we have used the `splitFasta` operator with a user-defined chunk size parameter (`fasta_chunk_size`), to break the input file into 5 chunks of 10K proteins each.
-
-For an in-depth look at Nextflow operators, visit the [Nextflow website](https://www.nextflow.io/docs/latest/reference/operator.html).
+## `Lesson-4`
+For this lesson we have created a local module named `filter_fasta` that runs a custom, executable python script.
+Custom scripts are located inside the `bin` folder.
+The `filter_fasta.py` script parses sequences from an input fasta file, filtering out sequences with less than `110` amino acids (`length_threshold` parameter).
+Finally, we have used the `collectFile` Nextflow operator to concatenate all filtered fasta chunks back into a single file.
 
 Command to run: `nextflow run main.nf -resume`
