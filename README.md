@@ -28,3 +28,5 @@ We have also used the `map` operator again on the `gunzip` output, to only split
 Then we have combined that with the `flatten` operator to emit each item separately to the next module (before `flatten`, it was one list of items).
 
 Command to run: `nextflow run main.nf -profile conda -resume`
+
+Switch to the Lesson-7 branch with `git checkout Lesson-7` to continue.
