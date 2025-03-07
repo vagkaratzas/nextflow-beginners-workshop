@@ -10,3 +10,5 @@ Specifically, we have used the `splitFasta` operator with a user-defined chunk s
 For an in-depth look at Nextflow operators, visit the [Nextflow website](https://www.nextflow.io/docs/latest/reference/operator.html).
 
 Command to run: `nextflow run main.nf -resume`
+
+Switch to the Lesson-4 branch with `git checkout Lesson-4` to continue.
