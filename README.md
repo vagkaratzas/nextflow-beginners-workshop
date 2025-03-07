@@ -9,4 +9,4 @@ Clone this repository on your local machine with the command `git clone https://
 Make sure to install Nextflow by following the steps [here](https://www.nextflow.io/docs/latest/install.html).
 To check if Nextflow was installed correctly, execute the command `nextflow -v`. If you see the software's version, you can proceed!
 
-Switch to the `Lesson-1` branch to begin.
+Switch to the `Lesson-1` branch with `git checkout Lesson-1` to begin.
