@@ -10,3 +10,5 @@ For `conda`, an `environment.yml` file with the required python library has been
 For `singularity` and `docker`, the container urls were created through the [seqera containers](https://seqera.io/containers/) site, by specifying the required python version.
 
 Command to run: `nextflow run main.nf -profile conda -resume`
+
+Switch to the Lesson-6 branch with `git checkout Lesson-6` to continue.
