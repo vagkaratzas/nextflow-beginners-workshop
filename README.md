@@ -7,3 +7,5 @@ The `filter_fasta.py` script parses sequences from an input fasta file, filterin
 Finally, we have used the `collectFile` Nextflow operator to concatenate all filtered fasta chunks back into a single file.
 
 Command to run: `nextflow run main.nf -resume`
+
+Switch to the Lesson-5 branch with `git checkout Lesson-5` to continue.
