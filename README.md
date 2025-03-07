@@ -10,4 +10,6 @@ The path points at the input data file, which has now been moved inside the `ass
 
 The command to execute now is `nextflow run main.nf -resume`.
 We have added the `-resume` flag which prevents wasting compute resources, by avoiding re-running processes that have already been executed successfully, given that their signature and inputs have remained the same.
-For this example, we changed the input file path by moving it into another folder, so the process will re-run. Execute the run command once more and the process will now show as `cached`.
+For this example, we changed the input file path by moving it into another folder, so the process will re-run. Execute the run command once more and the process will now show as `cached`. You can override input parameters by specifying them with a double dash (--) in the run command (e.g., `nextflow run main.nf --input path/to/other_file`).
+
+Switch to the Lesson-3 branch with `git checkout Lesson-3` to continue.
